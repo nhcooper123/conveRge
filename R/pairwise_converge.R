@@ -104,8 +104,8 @@ phy <- remove_missing_species_tree(phy, data, species_col)
 data <- sort_species_data(phy, data, species_col)
 
 # Create morphological distance matrix, including only columns with numbers
-flat_morpho_matrix <- get_flat_morpho_matrix(morpho_data, variable_list)
-morpho_dist_data <- get_morpho_dist_data(morpho_data, species_col,
+flat_morpho_matrix <- get_flat_morpho_matrix(data, variable_list)
+morpho_dist_data <- get_morpho_dist_data(data, species_col,
                                          flat_morpho_matrix)
 
 # Extract all phylogenetic distances from phylogeny
