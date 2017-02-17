@@ -9,6 +9,6 @@ Description: Wrapper functions, and other simple functions, to allow users to te
 License: CC0
 Encoding: UTF-8
 LazyData: true
-Imports: ape::cophenetic,
-    reshape2::melt
+Imports: ape,
+    reshape2
 Suggests: testthat
