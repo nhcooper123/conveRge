@@ -39,7 +39,7 @@ id_missing_data <- function(phy, data, species_col) {
 
 # Remove missing species from tree
 remove_missing_species_tree <- function(phy, data, species_col) {
-  tree_not_data <- id.missing.tree(phy, data, species_col)
+  tree_not_data <- id_missing_tree(phy, data, species_col)
   if (length(tree_not_data) > 0) {
     phy <- drop.tip(phy, tree_not_data)
   }
